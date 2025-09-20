@@ -1,0 +1,122 @@
+/* Terminal-inspired theme */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000000;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid #00ff00;
+}
+
+header h1 {
+    color: #ffb000;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #00ff00;
+    margin: 0.5rem 0 0 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-bottom: 1px solid #00ff00;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #00ff00;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid #00ff00;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+}
+
+section h2 {
+    color: #ffb000;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.project, .resume-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #00ff00;
+    background-color: #1a1a1a;
+}
+
+.project h3, .resume-section h3 {
+    color: #00ff00;
+    margin-top: 0;
+}
+
+a {
+    color: #0080ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #00ff00;
+    color: #00ff00;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
