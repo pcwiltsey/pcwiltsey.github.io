@@ -9,7 +9,7 @@ subtitle: "Senior DevSecOps Engineer"
     <p>Experienced DevSecOps engineer with a passion for security, automation, and efficient infrastructure. Skilled in cloud platforms, CI/CD pipelines, and secure development practices.</p>
 </section>
 
-<section id="projects">
+<section id="projects" class="two-column">
     <h2>Projects</h2>
     <div class="project">
         <h3>Project 1</h3>
