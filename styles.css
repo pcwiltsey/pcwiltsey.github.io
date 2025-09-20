@@ -77,10 +77,17 @@ section h2 {
     margin-top: 0;
 }
 
-.two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: space-between;
+}
+
+.projects-grid .project {
+    flex: 1 1 calc(33.333% - 2rem);
+    min-width: 300px;
+    box-sizing: border-box;
 }
 
 .project, .resume-section {
@@ -90,9 +97,43 @@ section h2 {
     background-color: #1a1a1a;
 }
 
-.project h3, .resume-section h3 {
+.project h3, .resume-section h3, .resume-content h1, .resume-content h2, .resume-content h3 {
     color: #00ff00;
     margin-top: 0;
+}
+
+.resume-content h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.resume-content h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 0.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resume-content h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.resume-content ul {
+    margin: 0.5rem 0;
+    padding-left: 2rem;
+}
+
+.resume-content li {
+    margin-bottom: 0.25rem;
+}
+
+.resume-content p {
+    margin: 0.5rem 0;
 }
 
 a {
