@@ -23,7 +23,7 @@ subtitle: "Senior DevSecOps Engineer"
 
 <section id="resume">
     <h2>Resume</h2>
-    {% include resume.md %}
+    {% capture resume_content %}{% include resume.md %}{% endcapture %}{{ resume_content | markdownify }}
 </section>
 
 <section id="contact">
